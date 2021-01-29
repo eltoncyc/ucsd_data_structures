@@ -62,7 +62,13 @@ int main_with_large_stack_space() {
     int parent_index;
     std::cin >> parent_index;
     if (parent_index >= 0)
-      nodes[child_index].setParent(&nodes[parent_index]);
+    {
+        nodes[child_index].setParent(&nodes[parent_index]);
+    }
+    else {
+        root = child_index;
+    }
+      
     nodes[child_index].key = child_index;
   }
 
