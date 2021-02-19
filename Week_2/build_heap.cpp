@@ -69,7 +69,7 @@ class HeapBuilder {
     swaps_.clear();
 
     // TODO: replace by a more efficient implementation
-    for (int i = int(data_.size() / 2); i >= 0; i++)
+    for (int i = int(data_.size() / 2); i >= 0; i--)
     {   
        
         down(i);
